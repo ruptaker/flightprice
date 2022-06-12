@@ -1,0 +1,285 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines Price Prediction</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700;800&family=Vast+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700;800&family=Vast+Shadow&family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/73db6a9586.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="static/css/styles.css">
+
+    
+</head>
+
+<form action="\predict" method="post">
+
+<body>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://www.rupeshshrestha.com"><h1>Airlines Price Prediction </h1> </a>
+                </div>
+    
+        </div>
+
+                
+    </nav>
+    <div class="row">
+     
+        <div class="col-lg-12 col-md-4 col-sm-2" >
+        <h1> My Name is Rupesh Shrestha</h1><img src="static/css/cc.png" height="150px" width="150px">
+        <h5>Hello Everyone, This is my final project on the prediction of Airlines flight. Final Thesis Project " Prediction of Airline Flights" </h5>
+        </div>
+      
+    </div>
+</div>
+</div>
+
+
+
+
+    <br><br><br>
+    <section id="features">
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+            
+          
+                    <div class="card">
+                        <div class="card-body">
+            <h5 class="card-title">Year</h5>
+            <select id="Year" name ="Year">
+                <option>Year</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+
+            </div>
+     
+    
+</div>
+              
+
+            </select>
+            <br><br><br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Quarter</h5>
+                            <!-- Departure -->
+                            <select name="quarter"  required="required">
+                                <option value="1">First Quarter(Jan,Feb,March)</option>
+                                <option value="2">Second Quarter(April , may , june)</option>
+                                <option value="3">Third Quarter ( july, august,september)</option>
+                                <option value="4">Fourth Quarter ( octuber, november, december)</option>
+                                </select>
+                        </div>
+                    </div>
+                </div>
+                
+            
+        
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- Source -->
+                            <h5 class="card-title">Departure City</h5>
+                            <select name="Source" id="Source" required="required">
+                               
+                                <option value="DepCity_Atlanta">Atlanta</option>
+                                <option value="DepCity_Austin">Austin</option>
+                                <option value="DepCity_Boston">Boston</option>
+                                <option value="DepCity_Buffalo">Buffalo</option>
+                                <option value="DepCity_Charlotte">Charlotte</option>
+                                <option value="DepCity_Chicago">Chicago</option>
+                                <option value="DepCity_Cincinnati">Cincinnati</option>
+                                <option value="DepCity_Cleveland">Cleveland</option>
+                                <option value="DepCity_Columbus">Columbus</option>
+                                <option value="DepCity_DallasFort">DallasFort</option>
+                                <option value="DepCity_Denver">Denver</option>
+                                <option value="DepCity_Detroit">Detroit</option>
+                                <option value="DepCity_Hartford">Hartford</option>
+                                <option value="DepCity_Houston">Houston</option>
+                                <option value="DepCity_Indianapolis">Indianapolis</option>
+                                <option value="DepCity_Kansas">Kansas</option>
+                                <option value="DepCity_Las">Las</option>
+                                <option value="DepCity_Los">Los</option>
+                                <option value="DepCity_Miami">Miami</option>
+                                <option value="DepCity_MinneapolisSt">MinneapolisSt</option>
+                                <option value="DepCity_Nashville">Nashville</option>
+                                <option value="DepCity_New">New York</option>
+                                <option value="DepCity_Orlando">Orlando</option>
+                                <option value="DepCity_Philadelphia">Philadelphia</option>
+                                <option value="DepCity_Phoenix">Phoenix</option>                           
+                                <option value="DepCity_San">San Fransisco</option>
+                                
+
+
+
+
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Arrival City </h5>
+                            <!-- Destination -->
+                            <select name="Destination" id="Destination" required="required">
+                                
+                                <option value="ArrivalCity_Las">LasVegas</option>
+                                <option value="ArrivalCity_Los">LosAngeles</option>
+                                <option value="ArrivalCity_Miami">Miami</option>
+                                <option value="ArrivalCity_MinneapolisSt">Minneapolis</option>
+                                <option value="ArrivalCity_Nashville">Nashville</option>
+                                <option value="ArrivalCity_New">Newyork</option>
+                                <option value="ArrivalCity_Orlando">Orlando</option>
+                                <option value="ArrivalCity_Philadelphia">Philadelphia</option>
+                                <option value="ArrivalCity_Phoenix">Phonenix</option>
+                                <option value="ArrivalCity_Pittsburgh">Pittsburgh</option>
+                                <option value="ArrivalCity_Portland">Portland</option>
+                                <option value="ArrivalCity_RaleighDurham">RaleighDurham</option>
+                                <option value="ArrivalCity_Sacramento">Sacramento</option>
+                                <option value="ArrivalCity_Salt">Salt</option>
+                                <option value="ArrivalCity_Philadelphia">Philadelphia</option>
+                                <option value="ArrivalCity_San">San Fransisco</option>
+                                <option value="ArrivalCity_Seattle">Seattle</option>
+                                <option value="ArrivalCity_Tampa">Tampa</option>
+                                <option value="ArrivalCity_Washington">Washington</option>
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+
+            
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Airlines </h5>
+                            <!-- IATA Code for Airline -->
+                            <select name="airline" id="airline" required="required">
+                            
+                               
+                                <option value="DL">Delta Airlines</option>
+                                <option value="UA">United airlines</option>
+                                <option value="US">US Airlines</option>
+                                <option value="NW">Northwest Airlines</option>
+                                <option value="CO">Continental Airlines</option>
+                                <option value="AS">Alaska Airrways</option>
+                                <option value="B6">Jet blue</option>
+                                <option value="FL">Airtran</option>
+                                <option value="WN">WN</option>
+
+                                <option value="G4">Allegiant Air</option>
+                                <option value="F9">Frontier Airlines</option>
+                                <option value="HP">Pearl Airlines</option>
+                                <option value="TW">Tway Airlines</option>
+                                <option value="NK">Spirit  airlines</option>
+                                <option value="YX">Midwest Express</option>
+                                <option value="Other">Other</option>
+                            
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        </section>
+        
+        <br>
+        <h3>{{ prediction_text }}</h3>
+
+            <br>
+            <!-- Submit -->
+            <input type="submit" value="Submit" class="btn btn-secondary">
+            <h4>(In Near future)</h4>
+            <button type="button" class="btn btn-secondary btn-lg"><i class="fab fa-apple"></i>Download</button>
+          <button type="button" class="btn btn-dark btn-lg"><i class="fab fa-android"></i>Download</button>
+          </div>
+          
+      </div>
+
+      
+
+        <footer id="footer">
+
+
+            <button type="button"a href="https://www.facebook.com/rupesh.itu" target="blank"><i class="social fab fa-facebook-f"></i></a> </button>
+        
+             <button type="button" a href="https://www.instagram.com/rupesh.stha1/?hl=tr" target="blank"> <i class="sccial fab fa-instagram"></i></a> </button>
+             <button type="button" a href="https://twitter.com/Rupssth1773" target="blank"><i class="social fab fa-twitter"></i></a> </button>
+             <button type="button" a href="https://www.linkedin.com/in/rupesh-shrestha-968416191/" target="blank"><i class="social fab fa-linkedin-in"></i></a> </button> 
+          <br>
+          <h7>Copyright 2022 Rupesh Shrestha</h7>
+
+          </footer>
+
+
+
+
+           
+
+             
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
